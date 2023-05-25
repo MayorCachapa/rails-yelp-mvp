@@ -1,0 +1,9 @@
+<h1>LIST OF RESTAURANTS</h1>
+<ul>
+    <% for restaurant in @restaurants %>
+
+    <li><%= link_to restaurant.name, restaurant_path(restaurant) %></li>
+
+    <% end %>
+    <li> <%= link_to "Add a new Restaurant", new_restaurant_path %> </li>
+</ul>
